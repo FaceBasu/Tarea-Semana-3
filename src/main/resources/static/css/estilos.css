@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    background-color: black;
+    color: black;
+}
+h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#titulo{
+    background-color: aqua;
+    font-size: 44px;
+    color: white;
+
+}
+.productos{
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+    max-height: 1024;
+    flex-wrap: wrap;
+    
+}
+.producto{
+    background-color: brown;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+a{
+    background-color: blue;
+    color: white;
+
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+    font-size: 44px;
+
+}
+

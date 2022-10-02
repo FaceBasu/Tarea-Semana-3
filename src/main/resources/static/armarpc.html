@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Esta es la primera página web del curso -->
+<html>
+    <head>
+        <title>BasuTienda</title>
+        <meta charset="UTF-8"/>        
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">            
+            <nav class="nav">
+                <a class="logo nav-link" href="index.html">BasuTienda</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="cases.html">Cases</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="monitores.html">Monitores</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="sillas.html">illas</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="armarpc.html">Armar una PC</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Ejemplos de Formularios</h2>
+            <article>
+                <header><h3>Ingrese la información</h3></header>
+                <form action="/cliente/ingresar" method="post">
+                    <input type="hidden" name="id" value="AB-450">
+
+                    <fieldset>
+                        <label>Nombre</label>
+                        <input 
+                            type="text" 
+                            name="nombre" 
+                            placeholder="Apellido1 Apellido2 Nombre"
+                            size="45">
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Ingrese el numero de cedula</label>
+                        <input 
+                            type="text" 
+                            name="nombre" 
+                            placeholder="1-1111-1111"
+                            size="10">
+                    </fieldset>
+
+                    <fieldset>                        
+                        <label>Gama de pc: </label>
+                        Gama Alta <input 
+                            type="checkbox" 
+                            name="anime">
+                        Gama media alta <input 
+                            type="checkbox" 
+                            name="drama">
+                        Gama Media <input 
+                            type="checkbox" 
+                            name="comedia">
+                        Gama Baja <input 
+                            type="checkbox" 
+                            name="documental">
+                    </fieldset>
+
+                    <fieldset>                        
+                        <label>Tipo de grafica: </label>
+                        <input 
+                            type="radio" 
+                            name="horario"
+                            value="presencial"> Nvidia RTX
+                        <input 
+                            type="radio" 
+                            name="horario"
+                            value="virtual"> Nvidia GTX
+                        <input 
+                            type="radio" 
+                            name="horario"
+                            value="online"> AMD 
+                        <input 
+                            type="radio" 
+                            name="horario"
+                            value="bimodal"> Graficos Integrados :(
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Ingrese el dia que vendra por su pc </label>
+                        <br>
+                        Dia: <input 
+                            type="date" 
+                            name="dia"><br>
+                        Hora: <input 
+                            type="time" 
+                            name="hora">
+                    </fieldset>
+
+
+
+                    <input type="submit" value="enviar" name="enviar"/>
+                </form>
+                <footer><small>No distribuimos sus datos, confie...</small></footer>
+            </article>
+        </section>
+    </body>
+</html>
+
